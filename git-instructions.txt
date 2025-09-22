@@ -1,0 +1,30 @@
+Git Steps
+
+Here are step by step instructions to starting your own project.
+
+1. create a repository on Github
+2. clone the repository:
+    git clone <repo-url>
+    cd <repo-name>
+3. Update a file:
+    git clone <repo-url>
+    cd <repo-name>
+4. Add a new file to the directory:
+    echo "Hello Git practice" > practice.txt
+5. Check changes:
+    git status
+    git diff README.md
+6. Create a branch:
+    git checkout -b feature/practice-update (creates a new branch and switches to the branch)
+7. Stage and commit the changes
+    git add README.md practice.txt
+    git commit -m "docs: update README and add practice file"
+8. Push changes to remote repository
+    git push -u origin feature/practice-update
+9. View changes in Github.
+10. Create pull request
+11. tag reviewers.
+12. when reviews are approved, merge to main.
+
+
+
