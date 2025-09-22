@@ -29,4 +29,28 @@ Here are step by step instructions to starting your own project.
 12. when reviews are approved, merge to main.
 
 
+Additional helpful instructions:
+
+To check if you are on the right branch: 
+    git remote -v
+To see what branch you are on:
+    git branch --show-current
+Check upstream tracking
+    git status
+To change to another remote repository:
+    git remote set-url origin <correct-repo-url>
+To direct yoour branch to the right upstream:
+    git branch --set-upstream-to=origin/feature/practice-update
+
+Installing and using GitHub CLI:
+
+1. gh --version (to verify if you have GitHub CLI installed)
+2. brew install gh (ask homebrew to install if needed)
+3. gh auth login (to connect your github acct to the client. This will prompt you to answer a couple questions and then login with the web browser with a one-time code.)
+
+To create a PR from the command line:
+(note you will need to make sure you have GitHub CLI and Homebrew can do that for you)
+gh pr create --base main --head <branch-name> --repo <username/repo-name>
+
+From here you should be able to see your PR in Github. 
 
